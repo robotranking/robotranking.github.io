@@ -5,6 +5,9 @@ html, body {
     height: 100%;
     margin: 0;
 }
+html {
+    -webkit-text-size-adjust: 100%; /* Prevents iOS Safari auto text resizing */
+}
 body {
     display: flex;
     flex-direction: column;
@@ -162,11 +165,13 @@ header, main, footer {
         font-size: 1em;
     }
     .header-frame {
+        -webkit-flex-direction: column; /* Safari support */
         flex-direction: column;
         align-items: center;
         padding: 5px 10px;
     }
     .nav-buttons-frame {
+        -webkit-flex-wrap: wrap; /* Safari support */
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 5px;
@@ -188,6 +193,7 @@ header, main, footer {
         font-size: 0.8em;
     }
     .welcome-container {
+        -webkit-flex-direction: column; /* Safari support */
         flex-direction: column;
         align-items: center;
         padding: 10px;
