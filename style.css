@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Add full height and flex layout to push footer to the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: #121212 url('smoke.png') no-repeat center 300px fixed; 
+    background-size: contain;  /* or cover if you prefer */
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #FF8C00;
+}
+
+form {
+  margin: 20px auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(30, 30, 30, 0.9);  /* updated from #1e1e1e */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.3);
+}
+
+input, select {
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #FF8C00;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1.1em;
+  color: #ffffff;
+  background-color: #FF8C00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background-color: #FF9C33;
+  transform: scale(1.02);
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+}
+th, td {
+  border: 1px solid #555555;
+  padding: 12px;
+  text-align: center;
+}
+thead {
+  background-color: #333333;
+  color: #FF8C00;
+}
+
+/* New centering for major sections */
+header, main, footer {
+  text-align: center;
+}
+
+/* End of futuristic styling */
+
+.header-frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(30, 30, 30, 0.9);  /* updated from #1e1e1e */
+  position: relative;
+  z-index: 10;
+}
+
+.header-title h1 {
+  margin: 0;
+  color: #FF8C00;
+  font-size: 1.5em;
+}
+
+.nav-buttons-frame button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* New flex styling for the welcome container */
+/* Adjust welcome container to move the image and text higher */
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    padding: 10px;           /* decreased padding to move content upward */
+    margin-top: 0;           /* reduced top margin to position image higher */
+}
+
+.welcome-text {
+    flex: 1;
+    text-align: left;
+    margin-top: 120px;          /* increased margin to move the text lower */
+}
+
+.welcome-text h2 {
+    font-size: 5em;  /* increased from 3em to 4em */
+    color: #FF8C00;
+}
+
+
+.welcome-img-container {
+    flex: 1;
+    text-align: right;
+    align-self: flex-start;  /* ensures the image is aligned at the top */
+}
+
+.welcome-img {
+    max-width: 80%;
+    height: bottom;
+    margin-top: -100px;   /* moved image lower */
+}
+
+
+
+/* Ensure the footer is placed immediately below the content */
+.main-content {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* Footer styling, etc. */
+
+
+
+
+

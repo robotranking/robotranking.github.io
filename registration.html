@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Team Registration</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="header-frame">
+			<div class="header-title">
+				<h1><strong>Regular Category Ranking 2025</strong></h1>
+			</div>
+			<div class="nav-buttons-frame">
+				<button onclick="location.href='index.html'" style="background-color: #FF8C00; color: #fff;">Home</button>
+				<button onclick="location.href='registration.html'" style="background-color: #FF8C00; color: #fff;">Registration</button>
+				<button onclick="location.href='race1.html'" style="background-color: #FF8C00; color: #fff;">Race 1</button>
+				<button onclick="location.href='race2.html'" style="background-color: #FF8C00; color: #fff;">Race 2</button>
+				<button onclick="location.href='race3.html'" style="background-color: #FF8C00; color: #fff;">Race 3</button>
+				<button onclick="location.href='ranking.html'" style="background-color: #FF8C00; color: #fff;">Ranking</button>
+			</div>
+		</div>
+	</header>
+	<main>
+		<h1>Team Registration</h1>
+		<section id="registration">
+			<form id="registration-form">
+				<label>Team Name: <input type="text" id="registerTeamName" required></label>
+				<button type="submit">Register Team</button>
+			</form>
+			<table id="registrationTable">
+				<thead>
+					<tr>
+						<th>Team</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- ...existing teams updated by script.js... -->
+				</tbody>
+			</table>
+		</section>
+	</main>
+	
+	<footer>
+		<div class="footer-container">
+			<p>Created by Pais & Maria</p>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

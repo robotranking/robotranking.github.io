@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Current Ranking</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="header-frame">
+			<div class="header-title">
+				<h1><strong>Regular Category Ranking 2025</strong></h1>
+			</div>
+			<div class="nav-buttons-frame">
+				<button onclick="location.href='index.html'" style="background-color: #FF8C00; color: #fff;">Home</button>
+				<button onclick="location.href='registration.html'" style="background-color: #FF8C00; color: #fff;">Registration</button>
+				<button onclick="location.href='race1.html'" style="background-color: #FF8C00; color: #fff;">Race 1</button>
+				<button onclick="location.href='race2.html'" style="background-color: #FF8C00; color: #fff;">Race 2</button>
+				<button onclick="location.href='race3.html'" style="background-color: #FF8C00; color: #fff;">Race 3</button>
+				<button onclick="location.href='ranking.html'" style="background-color: #FF8C00; color: #fff;">Ranking</button>
+			</div>
+		</div>
+	</header>
+	
+	<main>
+		<h1>Current Ranking</h1>
+		<table id="rankingTable">
+			<thead>
+				<tr>
+					<th>Rank</th>
+					<th>Team</th>
+					<th>Race 1</th>
+					<th>Race 2</th>
+					<th>Race 3</th>
+				</tr>
+			</thead>
+			<tbody>
+				 <!-- Updated dynamically by script.js -->
+			</tbody>
+		</table>
+	</main>
+	
+	<footer>
+		<div class="footer-container">
+			<p>Created by Pais & Maria</p>
+		</div>
+	</footer>
+	<!-- New download button added with fixed positioning -->
+	<button id="downloadBtn" onclick="downloadRanking()" style="position: fixed; bottom: 20px; right: 20px;">Download Excel</button>
+	<script src="script.js"></script>
+</body>
+</html>
