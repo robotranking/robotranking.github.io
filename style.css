@@ -150,7 +150,60 @@ header, main, footer {
 
 /* Footer styling, etc. */
 
-
-
-
-
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 0.9em;
+        margin: 0;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    .header-frame {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 10px;
+    }
+    .nav-buttons-frame {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .nav-buttons-frame button {
+        margin: 5px !important;
+        padding: 5px 8px !important;
+        font-size: 0.8em !important;
+        background-color: #FF8C00 !important;
+        color: #ffffff !important;
+    }
+    form {
+        max-width: 95%;
+        padding: 10px;
+    }
+    table {
+        width: 100%;
+        margin: 10px auto;
+        font-size: 0.8em;
+    }
+    .welcome-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .welcome-text {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1em;
+    }
+    .welcome-img-container {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .welcome-img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+}
